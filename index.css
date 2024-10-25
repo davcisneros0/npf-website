@@ -13,6 +13,30 @@ body {
     background-color: rgb(255, 253, 253);
 }
 
+
+                                                /**FOOTER - FOR ALL PAGES**/
+
+footer {
+    padding: 3% 0;
+    text-align: center;
+    background-color: rgb(2, 19, 11);
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 1.5%;
+    text-decoration: none;
+    font-size: 1.8em;
+    transition: 0.2s;
+}
+
+.social-icons a:hover {
+    color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+                                                /**FOOTER - FOR ALL PAGES**/
+
                                          /**NAVIGARTION BAR - FOR ALL PAGES**/
 
 
@@ -153,6 +177,7 @@ nav {
 #programs {
     background-color: #003029;
     color: white;
+    padding-top: 2%;
 }
 
 #programs h2 {
@@ -208,26 +233,3 @@ nav {
     cursor: pointer;
     transition: 0.3s;
 }
-
-                                                /**FOOTER - FOR ALL PAGES**/
-
-footer {
-    padding: 3% 0;
-    text-align: center;
-    background-color: rgb(2, 19, 11);
-}
-
-.social-icons a {
-    color: white;
-    margin: 0 1.5%;
-    text-decoration: none;
-    font-size: 1.8em;
-    transition: 0.2s;
-}
-
-.social-icons a:hover {
-    color: rgb(211, 211, 211);
-    cursor: pointer;
-}
-
-                                                /**FOOTER - FOR ALL PAGES**/
