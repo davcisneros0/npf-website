@@ -1,13 +1,290 @@
-<!--DETAILED INFO ABOUT THE ORGANIZATION'S WORK
-IMPACT REPORTS OR STATISTICS-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>National Park Federation | Programs & Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>National Park Federation | Programs</title>
+    <style>
+         @media only screen and (max-width: 900px) {
+ 
+            #nav-links {
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: -100%; 
+                z-index: 10;
+                transition: 0.3s ease-in-out; 
+                color: black;
+                gap: 5%;
+            } 
+
+            #nav-links a {
+                height: auto;
+                padding: 2%;
+                color: black;
+            }
+
+            nav {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            /*removes logo from hamburger menu*/
+            .nav-item img {
+                display: none;
+            }
+
+            /*HAMBURGER MENU ICON*/
+            .open-sidebar-btn {
+                display: block;
+                cursor: pointer;
+                color: white;
+                font-size: 1.5em;
+            }
+
+            #sidebar-active:checked ~ #nav-links {
+                right: 0;
+            }
+
+            #sidebar-active:checked ~ #overlay-sidebar {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                z-index: 5;
+                background-color: rgb(27, 27, 27);
+                opacity: 0.3;
+            }
+
+            footer {
+                padding: 5% 0;
+            }
+
+            #principles-menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+                gap: 30px 40px; 
+                padding: 2%;
+            }
+
+            .interested-section {
+                font-size: 1.2em;   
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+
+            <!--FOR RESPONSIVE NAV // HAMBURGER MENU-->
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-btn">
+                <i class="fa fa-solid fa-bars"></i>
+            </label>
+
+            <label id="overlay-sidebar" for="sidebar-active"></label>
+
+            <!--FOR RESPONSIVE NAV // HAMBURGER MENU-->
+
+            <div class="nav-item">
+                <a href="index.html">
+                    <img src="assets/national-park-logo-white.png" width="300" alt="Logo of NPF">
+                </a>
+            </div>
+
+            <div id="nav-links">
+                <div class="nav-item"><a href="about.html">ABOUT</a></div>
+                <div class="nav-item"><a href="services.html">PROGRAMS</a></div>
+                <div class="nav-item"><a href="partners.html">PARTNERS</a></div>
+                <div class="nav-item"><a href="contact.html">CONTACT</a></div>
+                <!-- <div class="nav-item-donate"><a href="donate.html">DONATE</a></div> -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="programs-banner">
+            <div class="programs-banner-statement animate__animated animate__fadeIn">
+                <h1>Programs</h1>
+                <br>
+                    <p>We work, study, collaborate, and explore it all in our national parks. We protect our
+                        most special places through innovative and collaborative projects.
+                    </p>
+            </div>
+        </section>
+
+        <!-- <section id="about-webpage-map">
+
+        </section> -->
+
+        <div id="about">
+            <div class="about-paragraph-container">
+                    <p>
+                        The National Park Federation (NPF) plays a vital role in supporting and enhancing the United States'
+                        national parks through various programs aimed at conservation, education, and community engagement. By 
+                        advocating for policies that protect natural and cultural resources, the NPF works to secure funding and 
+                        resources necessary for park maintenance and development. 
+                        <br>
+                        <br>
+                        Its initiatives, such as "Parks for All" and 
+                        youth engagement programs, foster inclusivity and promote environmental stewardship among diverse 
+                        communities. Additionally, NPF partners with local organizations to implement conservation projects that 
+                        restore habitats, ensuring that these treasured landscapes are preserved for future generations to explore 
+                        and enjoy.
+                        <br>
+                        <br>
+                        The National Park Foundation's programs are designed to connect people with the beauty and significance of America’s national 
+                        parks while fostering a sense of responsibility toward their preservation. Initiatives like "Parks Connect" facilitate 
+                        partnerships with local communities, promoting collaborative efforts to protect park resources and enhance visitor engagement. 
+                        The foundation also champions the "National Park Service's Urban Agenda," which focuses on bringing the benefits of parks 
+                        to urban populations, ensuring that city dwellers have access to natural spaces.
+                        <br>
+                        <br>
+                        Through funding and support for projects
+                        that improve infrastructure, visitor services, and educational opportunities, the National Park Foundation plays a crucial 
+                        role in enhancing the sustainability and accessibility of these cherished landscapes for all.
+                    </p>
+            </div>
+        </div>
+
+        <section id="programs">
+            <h2>Our Programs</h2>
+
+                <div class="programs-menu-container">
+
+                    <div class="programs-item">
+                        <div class="programs-item-left">
+                            <img src="https://www.skiutah.com/files/subblob/blog/images.listing/FUuJ2sonaw3EXZBiysAHKP"
+                            alt="Photo of a group of bicyclists and bicyclists using adaptive bikes">
+                        </div> 
+
+                        <div class="programs-item-right">
+                            <h4>Accessibility for All Americans</h4>
+                            <p>Ensuring our national parks are open and inclusive to everyone safeguards a vibrant, thriving 
+                                future for the parks. Funds secured today can ensure all Americans with disabilities participate 
+                                in the life and ecosystem of our national parks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="programs-item">
+                        <div class="programs-item-left">
+                            <img src="https://images.unsplash.com/photo-1497373637916-e47a55e22d0a?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Photo of a small canoe in a huge clearwater lake surrounded by mountains">
+                        </div> 
+
+                        <div class="programs-item-right">
+                            <h4>Conservating Water</h4>
+                            <p>It is our responsibility to preserve fresh water — a vital limited resource that preserves 
+                                park ecosystems — while reaping the simultaneous benefits of reduction in energy use from water 
+                                treatment and transport.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="programs-item">
+                        <div class="programs-item-left">
+                            <img src="https://images.unsplash.com/photo-1652971876875-05db98fab376?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Photo of a group of people cleaning a lake">
+                        </div> 
+
+                        <div class="programs-item-right">
+                            <h4>Habitat Conservation</h4>
+                            <p>Many national parks were created because of their unique landscapes and their biodiverse ecosystems 
+                                that host a rich variety of wildlife and plants – some of which can’t be found anywhere else in 
+                                the world. National parks are home to an abundant complexity of terrestrial and aquatic habitats, 
+                                often acting as a refuge for wildlife. But even protected lands are not immune to threats.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="programs-item">
+                        <div class="programs-item-left">
+                            <img src="https://images.unsplash.com/photo-1506798532304-3bcd798bb308?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Photo of two brown birds flying under a green field ">
+                        </div> 
+
+                        <div class="programs-item-right">
+                            <h4>Internships</h4>
+                            <p>Internships play a critical role in developing the talent pool of diverse, enthusiastic, motivated, 
+                                and highly skilled young people who are next in line to take care of the more than 400 national 
+                                park sites that make up the national park system.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="programs-item">
+                        <div class="programs-item-left">
+                            <img src="https://images.unsplash.com/photo-1610093674388-cee0337f2684?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Photo of two people in blue t-shirts throwing away trash and wrappers to a sand bag">
+                        </div> 
+
+                        <div class="programs-item-right">
+                            <h4>Reducing Waste, Cleaning Parks</h4>
+                            <p>Internships play a critical role in developing the talent pool of diverse, enthusiastic, motivated, 
+                                and highly skilled young people who are next in line to take care of the more than 400 national 
+                                park sites that make up the national park system.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            
+        </section>
+
+        <section class="interested-section">
+            <h4>Interested?</h4>
+            <p>The National Park Federation is always looking for new fellows and communities to assist!
+                <br>
+            Interested in protecting our natural treasures? Join the National Park Federation today and help us 
+            preserve and promote the beauty of our national parks for future generations!
+            </p>
+            <button><a href="contact.html" target="_blank">Sign Up</a></button>
+        </section>
+    </main>
     
+    <footer>
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/NationalParkFoundation" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/nationalparkfoundation/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>    
+                </a>
+
+                <a href="https://x.com/nationalparkfdn" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>  
+                </a>
+
+                <a href="https://www.youtube.com/c/nationalparkfoundation" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>    
+                </a>
+                
+            </div>
+
+            <img style="margin-top: 1.5%" src="assets/national-park-logo-white.png" width="200" alt="Logo of NPF">
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>

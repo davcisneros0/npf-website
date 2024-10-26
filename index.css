@@ -165,7 +165,7 @@ nav {
 #programs {
     background-color: #003029;
     color: white;
-    padding-top: 2%;
+    padding: 2% 0;
 }
 
 #programs h2 {
@@ -360,3 +360,74 @@ nav {
 
 
                                                     /*SERVICES.HTML*/
+
+#programs-banner {
+    background-image: url('https://images.unsplash.com/photo-1662614380261-0775c913f71b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 25%;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+}
+
+.programs-banner-statement {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.programs-banner-statement h1 {
+    font-size: 2.2em;
+    text-shadow: 1px 1px 3px black;
+}
+
+.programs-banner-statement p {
+    text-shadow: 1px 1px 3px black;
+    font-size: 0.8em;
+}
+
+
+.programs-menu-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programs-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    margin-top: 2%;
+    line-height: 1.8;
+    word-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.programs-item-left {
+    width: 40%;
+    margin: 0 auto;
+    /* background-color: red;  */
+}
+
+.programs-item-left img {
+    width: 75%;
+}
+
+.programs-item-right {
+    width: 50%;
+}
+
+.programs-item-right h4 {
+    font-size: 1.6em;
+    margin-bottom: 0.5%;
+}
