@@ -5,9 +5,264 @@ TESTIMONIALS OR SUCCESS STORIES-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>National Park Federation | About</title>
+    <style>
+         @media only screen and (max-width: 900px) {
+ 
+            #nav-links {
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: -100%; 
+                z-index: 10;
+                transition: 0.3s ease-in-out; 
+                color: black;
+                gap: 5%;
+            } 
+
+            #nav-links a {
+                height: auto;
+                padding: 2%;
+                color: black;
+            }
+
+            nav {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            /*removes logo from hamburger menu*/
+            .nav-item img {
+                display: none;
+            }
+
+            /*HAMBURGER MENU ICON*/
+            .open-sidebar-btn {
+                display: block;
+                cursor: pointer;
+                /* margin-right: 2%; */
+                color: white;
+                font-size: 1.5em;
+            }
+
+            #sidebar-active:checked ~ #nav-links {
+                right: 0;
+            }
+
+            #sidebar-active:checked ~ #overlay-sidebar {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                z-index: 5;
+                background-color: rgb(27, 27, 27);
+                opacity: 0.3;
+            }
+
+            footer {
+                padding: 5% 0;
+            }
+
+            #principles-menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+                /* display: grid; */
+                /* grid-template-columns: repeat(2, 1fr);  */
+                gap: 30px 40px; 
+                padding: 2%;
+            }
+
+            .interested-section {
+                font-size: 1.2em;   
+            }
+
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+
+            <!--FOR RESPONSIVE NAV // HAMBURGER MENU-->
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-btn">
+                <i class="fa fa-solid fa-bars"></i>
+            </label>
+
+            <label id="overlay-sidebar" for="sidebar-active"></label>
+
+            <!--FOR RESPONSIVE NAV // HAMBURGER MENU-->
+
+            <div class="nav-item">
+                <a href="index.html">
+                    <img src="assets/national-park-logo-white.png" width="300" alt="Logo of NPF">
+                </a>
+            </div>
+
+            <div id="nav-links">
+                <div class="nav-item"><a href="about.html">ABOUT</a></div>
+                <div class="nav-item"><a href="services.html">SERVICES</a></div>
+                <div class="nav-item"><a href="partners.html">PARTNERS</a></div>
+                <div class="nav-item"><a href="contact.html">CONTACT</a></div>
+                <!-- <div class="nav-item-donate"><a href="donate.html">DONATE</a></div> -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about-banner">
+            <div class="about-banner-statement animate__animated animate__fadeIn">
+                <h1>Our Mission & History</h1>
+                <br>
+                    <p>As the official nonprofit partner of the National Park Service, the National Park Foundation 
+                        builds private support and creates strategic partnerships to protect and enhance America's national 
+                        parks for present and future generations.
+                    </p>
+            </div>
+        </section>
+
+        <section id="about-webpage-map">
+
+        </section>
+
+        <section id="about">
+            <div class="about-paragraph-container">
+                    <p>As the official nonprofit partner of the National Park Service, the National Park Foundation generates private 
+                        support and builds strategic partnerships to protect and enhance America's national parks for present and future 
+                        generations.
+                        <br>
+                        <br>
+                        Chartered by Congress in 1967, the National Park Foundation is rooted in a legacy that began more than a 
+                        century ago, when private citizens from all walks of life took action to establish and protect our national 
+                        parks. Today, the National Park Foundation carries on that tradition.
+                        <br>
+                        <br>
+                        Through lobbying efforts, former First Lady of the United States, Lady Bird Johnson and philanthropist 
+                        Laurance Rockefeller, the official charter to establish the National Park Foundation was passed by Congress 
+                        in 1967. As one of the first advocates for the National Park Foundation, Lady Bird Johnson's commitment to 
+                        beautifying our country lives on in the actions of conservationists nationwide who work to protect our parks.
+                        <br>
+                        <br>
+                        The creation of the National Park Foundation led to the immediate protection and enhancement of some of 
+                        our most iconic and historic places. For example, within the first 10 years, we established grants to 
+                        protect President Theodore Roosevelt’s home in Sagamore, Long Island; made emergency land purchases to 
+                        save Gettysburg, the Blue Ridge Parkway, and Muir Woods; supported a grant in the Rocky Mountain 
+                        Range; and established a fund to enhance the Lyndon B. Johnson Memorial Grove along the Potomac River.
+                        <br>
+                        <br> 
+                        To help celebrate 100 years of our national parks in 2016, the National Park Foundation collaborated with 
+                        the National Park Service to launch the Find Your Park campaign, designed to encourage people to discover 
+                        their personal connections to our parks.
+                        <br>
+                        <br>
+                        <b>NPS's mission is to “preserve unimpaired the natural and cultural resources and values of the National 
+                        Park System for the enjoyment, education, and inspiration of this and future generations.”</b>
+                        <br>
+                        <br>
+                        To learn more about NPS, visit their website at <a href="https://www.nps.gov" target="_blank">nps.gov</a>.
+                    </p>
+            </div>
+        </section>
+
+        <section id="principles">
+            <h2>Our Principles</h2>
+
+            <div id="principles-menu">
+
+                <div class="principles-items">
+                    <img src="https://images.unsplash.com/photo-1530406416420-3c9514a70b91?q=80&w=2041&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Photo of a deer looking at the camera in a forest">
+                    <div class="program-details">
+                        <h3>Strategic</h3>
+                        <p>We work with the National Park Service to identify, fund, and advance priority initiatives.
+                        </p>
+                    </div>
+               </div>
+
+               <div class="principles-items">
+                    <img src="https://images.unsplash.com/photo-1463839346397-8e9946845e6d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Photo of a group of school children playing in the grass">
+                    <div class="program-details">
+                        <h3>Impact</h3>
+                         <p>We invest in critical projects that provide lasting, measurable benefits to national parks.
+                        </p>
+                    </div>
+               </div>
+
+               <div class="principles-items">
+                    <img src="https://images.unsplash.com/photo-1726221062287-fda475b85493?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Photo of a woman and her dog inside of a tent">
+                    <div class="program-details">
+                        <h3>Innovation</h3>
+                         <p>We employ an entrepreneurial approach to address the complex challenges facing our national parks.
+                        </p>
+                    </div>  
+               </div>
+
+               <div class="principles-items">
+                <img src="https://images.unsplash.com/photo-1628941490404-d4e2ef1d7ec4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Photo of a woman and her dog inside of a tent">
+                <div class="program-details">
+                    <h3>Diversity</h3>
+                     <p>We encourage inclusion and diversity of people, beliefs, and viewpoints among National Park Foundation 
+                        staff, board, and partners.
+                    </p>
+                </div>  
+           </div>
+
+            </div>
+        </section>
+
+        <section class="interested-section">
+            <h4>Interested?</h4>
+            <p>The National Park Federation is always looking for new fellows and communities to assist!
+                <br>
+            Interested in protecting our natural treasures? Join the National Park Federation today and help us 
+            preserve and promote the beauty of our national parks for future generations!
+            </p>
+            <button><a href="contact.html" target="_blank">Sign Up</button>
+        </section>
+    </main>
     
+    <footer>
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/NationalParkFoundation" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/nationalparkfoundation/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>    
+                </a>
+
+                <a href="https://x.com/nationalparkfdn" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>  
+                </a>
+
+                <a href="https://www.youtube.com/c/nationalparkfoundation" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>    
+                </a>
+                
+            </div>
+
+            <img style="margin-top: 1.5%" src="assets/national-park-logo-white.png" width="200" alt="Logo of NPF">
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
