@@ -434,3 +434,58 @@ nav {
 
 
                                                 /*DONATE.HTML*/
+
+#donate-banner {
+    background-image: url('https://images.unsplash.com/photo-1615046727544-8fd9ac9836cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 10%;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+}
+
+.donate-banner-statement {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.donate-banner-statement h1 {
+    font-size: 2.2em;
+    text-shadow: 1px 1px 3px black;
+}
+
+.donate-banner-statement p {
+    text-shadow: 1px 1px 3px black;
+    font-size: 0.8em;
+}
+
+
+#donate {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.donate-paragraph-container {
+    width: 60%;
+    padding: 1%;
+    letter-spacing: 1px;
+    font-size: 1em;
+    word-wrap: break-word;
+    line-height: 1.7;
+    margin-top: 2%;
+    background-color: orange;
+}
+
