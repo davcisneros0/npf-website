@@ -473,19 +473,108 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    background-color: red;
+}
+
+.donate-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .donate-paragraph-container {
-    width: 60%;
-    padding: 1%;
-    letter-spacing: 1px;
+    padding: 2%; 
     font-size: 1em;
-    word-wrap: break-word;
     line-height: 1.7;
     margin-top: 2%;
-    background-color: orange;
+    background-color: rgb(238, 238, 238);
+    transition: 0.2s ease-in-out;
 }
 
+.donate-paragraph-container h4 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.donate-amount-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 20px;
+    padding: 1%;
+}
+
+.donate-amount { 
+    width: 50%;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    background-color: #003665;
+    font-size: 1.5em;
+    padding: 2% 1%;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.donate-amount:active {
+    background-color: #001426;
+}
+
+.donate-amount-other input {
+    font-size: 1.4em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 12px;
+}
+
+.contact-form {
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    /* border: 1px solid red; */
+    margin: 3px;
+}
+
+.contact-input {
+    display: block;
+    width: 100%;
+    font-size: 1.4em;
+    margin: 3px;
+    padding: 5px 12px;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 5px;
+}
+
+.submit-btn {
+    font-size: 1.2em;
+    margin-top: 1%;
+    padding: 1.5%;
+    background-color: #003665;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: #004b8d;
+    cursor: pointer;
+}
+
+.submit-btn:active {
+    background-color: #001426;
+}
